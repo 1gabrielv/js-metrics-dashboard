@@ -1,5 +1,4 @@
-# js-metrics-dashboard
-📦 Gerenciador de Inventário (Vanilla JS)
+# 📦 Gerenciador de Inventário (Vanilla JS)
 Este é um projeto simples de catálogo de produtos desenvolvido como parte de um trabalho acadêmico de Desenvolvimento Web. O objetivo principal foi aplicar conceitos fundamentais de manipulação do DOM e lógica de programação com JavaScript puro (Vanilla).
 
 Nota: Este projeto foi desenvolvido para fins didáticos, focando em uma estrutura tripartida clara (HTML, CSS e JS) e processamento de dados em tempo real no lado do cliente.
