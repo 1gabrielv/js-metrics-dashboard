@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Inventário</title>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Catálogo de Produtos</h1>
+            <p>Gerencie seu inventário e métricas em tempo real</p>
+        </header>
+
+        <section id="dashboard" class="metrics-grid">
+            <div class="card-metric">
+                <h3>Total do Inventário</h3>
+                <p id="valor-total">R$ 0,00</p>
+            </div>
+            <div class="card-metric">
+                <h3>Preço Médio</h3>
+                <p id="preco-medio">R$ 0,00</p>
+            </div>
+            <div class="card-metric">
+                <h3>Qtd. de Itens</h3>
+                <p id="total-itens">0</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="cadastro">
+            <form id="product-form">
+                <div class="form-group">
+                    <label for="nome">Nome do Produto</label>
+                    <input type="text" id="nome" placeholder="Ex: Monitor Dell" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="Eletrônicos">Eletrônicos</option>
+                        <option value="Periféricos">Periféricos</option>
+                        <option value="Acessórios">Acessórios</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="preco">Preço (R$)</label>
+                    <input type="number" id="preco" step="0.01" min="0" placeholder="0,00" required>
+                </div>
+
+                <button type="submit" id="btn-adicionar">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <section id="lista-container">
+            <h2>Produtos Cadastrados</h2>
+            <div id="product-list" class="grid-catalog">
+                </div>
+        </section>
+    </main>
+</body>
+</html>
